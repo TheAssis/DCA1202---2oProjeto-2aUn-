@@ -7,3 +7,4 @@ For more information, please access the following link: <https://agostinhobritoj
 Study links:
   -on vector objects <http://www.dcs.bbk.ac.uk/~roger/cpp/week6.htm>
   -on vector of vectors: <http://www.cplusplus.com/forum/general/833/>
+  -on concrete/abstract classes: <https://stackoverflow.com/questions/2149207/what-is-the-difference-between-a-concrete-class-and-an-abstract-class>
