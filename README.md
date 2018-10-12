@@ -6,3 +6,4 @@ For more information, please access the following link: <https://agostinhobritoj
 
 Study links:
   -on vector objects <http://www.dcs.bbk.ac.uk/~roger/cpp/week6.htm>
+  -on vector of vectors: <http://www.cplusplus.com/forum/general/833/>
