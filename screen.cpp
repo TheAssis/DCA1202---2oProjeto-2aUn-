@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 class Screen{
 private:
   // armazenam o tamanho da tela de desenho
@@ -37,5 +38,21 @@ void Screen::setBrush(char _brush){
     brush = _brush;
 }
 
+class FiguraGeometrica{
+public:
+    virtual void draw(Screen &t);
+};
+
+class Reta: public FiguraGeometrica{
+
+};
+
+class Retangulo : public FiguraGeometrica{
+
+};
+
+class Circulo : public FiguraGeometrica{
+
+};
 // a linha abaixo é apenas pro compilador não reclamar da falta da main
 int main(){}
