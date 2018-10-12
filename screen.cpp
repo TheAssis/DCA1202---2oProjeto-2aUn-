@@ -32,5 +32,9 @@ public:
   friend ostream& operator<<(ostream &os, Screen &t);
 };
 
+void Screen::setBrush(char _brush){
+    brush = _brush;
+}
+
 // a linha abaixo é apenas pro compilador não reclamar da falta da main
 int main(){}
