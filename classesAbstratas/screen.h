@@ -1,7 +1,10 @@
 //screen.h -- Protótipo da classe Screen.
 #ifndef SCREEN_H
 #define SCREEN_H
+#include <vector>       //para poder usar vector
+#include <ostream>      //para poder usar ostream
 
+using namespace std;
 
 class Screen
 {
@@ -9,7 +12,7 @@ class Screen
 private:
     int nlin, ncol;     //armazena as dimensões da tela.
     char brush;         //armazena o caractere utilizado para desenhar.
-    vector< vector<char> >;//armazena a matriz que representa a tela.
+    vector< vector<char> > mat;//armazena a matriz que representa a tela.
 
 public:
     Screen(void);
