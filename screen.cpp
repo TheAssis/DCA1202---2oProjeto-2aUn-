@@ -1,4 +1,7 @@
+#include<iostream>
 #include<vector>
+
+using namespace std;
 
 class Screen{
 private:
@@ -28,3 +31,6 @@ public:
   // envia a tela para um stream de saida
   friend ostream& operator<<(ostream &os, Screen &t);
 };
+
+// a linha abaixo é apenas pro compilador não reclamar da falta da main
+int main(){}
