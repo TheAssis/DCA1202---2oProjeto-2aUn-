@@ -19,8 +19,9 @@ public:
     void setPixel(int x, int y); //desenha apenas UM pixel utilizando o caractere em brush.
     void clear(void);            //limpa a tela.
     void setBrush(char brush);   //Altera o caractere de desenho.
-    friend ostream& operator<<(ostream& os, Screen& t);//sobrecarga do cout << pra imprimir
+    friend ostream& operator<<(ostream& os, Screen& t); //sobrecarga do cout << pra imprimir
                                                        //a tela por um stream de saída.
+
 };
 
 
