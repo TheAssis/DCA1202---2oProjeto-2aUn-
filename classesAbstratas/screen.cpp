@@ -23,8 +23,8 @@ void Screen::setPixel(int x, int y) {
 
 //VERIFICAR PORQUE DIABOS NÃO ESTÃO SENDO RECONHECIDAS
 ostream& operator<<(ostream& os, Screen& t) {
-    for(int i=0; i<nlin; i++) {
-        for(int j=0; j<ncol; j++) {
+    for(int i=0; i<t.nlin; i++) {
+        for(int j=0; j<t.ncol; j++) {
             os << t.mat[i][j] << " ";
         }
         os << endl;
