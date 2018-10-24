@@ -15,7 +15,7 @@ private:
     vector< vector<char> > mat;//armazena a matriz que representa a tela.
 
 public:
-    Screen(int _nlin,int _ncol); 
+    Screen(int _nlin, int _ncol);
     void setPixel(int x, int y); //desenha apenas UM pixel utilizando o caractere em brush.
     void clear(void);            //limpa a tela.
     void setBrush(char brush);   //Altera o caractere de desenho.

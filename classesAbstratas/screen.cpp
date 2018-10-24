@@ -17,7 +17,9 @@ void Screen::setBrush(char _brush) { //define o caractere a ser printado
 
 
 void Screen::setPixel(int x, int y) {
-    mat[x][y] = brush;
+    if(x>=0 && y>=0 && x<=ncol && y<=nlin){
+        mat[x][y] = brush;
+    }
 }
 
 
@@ -25,7 +27,7 @@ void Screen::setPixel(int x, int y) {
 ostream& operator<<(ostream& os, Screen& t) {
     for(int i=0; i<t.nlin; i++) {
         for(int j=0; j<t.ncol; j++) {
-            os << t.mat[i][j] << " ";
+            os << t.mat[i][j];
         }
         os << endl;
     }
