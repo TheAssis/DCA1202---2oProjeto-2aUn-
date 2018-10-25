@@ -9,7 +9,7 @@ class FiguraGeometrica
 
 public:
     FiguraGeometrica();
-    virtual void draw(Screen& t);
+    virtual void draw(Screen& t)=0;
 
 };
 
