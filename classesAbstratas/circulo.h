@@ -6,10 +6,13 @@
 
 class Circulo : public FiguraGeometrica
 {
-
+private:
+    int x0, y0, raio, fillmode;
+    char brush;
 public:
-    Circulo();
-
+    Circulo();    
+    Circulo(int _x0, int _y0, int _raio, int _fillmode, char _brush);
 };
 
 #endif // CIRCULO_H
+
