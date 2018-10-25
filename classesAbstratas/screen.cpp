@@ -22,6 +22,14 @@ void Screen::setPixel(int x, int y) {
     }
 }
 
+void Screen::clear(){
+    for(int i =0; i<nlin; i++){
+        for(int j=0; j<ncol; j++){
+            mat[i][j] = ' ';
+        }
+    }
+}
+
 
 
 ostream& operator<<(ostream& os, Screen& t) {
