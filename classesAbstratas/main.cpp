@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     //testando se está printando.
-    Screen tela(20,60);
+    Screen tela(10,10);
 
     tela.setBrush('&');
     tela.setPixel(3,3);
