@@ -15,7 +15,7 @@ int main() {
     //cout << tela;
 
     Reta *reta = new Reta (0, 0, 10, 10, '%');
-    Retangulo *ret = new Retangulo (0,0,9,9,0,'!');
+    Retangulo *ret = new Retangulo (0,2,9,9,0,'!');
     ret->draw(tela);
     reta->draw(tela);
     cout << tela;
