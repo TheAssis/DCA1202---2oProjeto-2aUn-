@@ -6,10 +6,12 @@
 
 class FiguraGeometrica
 {
+protected:      //para que as classes herdeiras possam utilizar.
+    char brush;
 
 public:
     FiguraGeometrica();
-    virtual void draw(Screen& t)=0;
+    virtual void draw(Screen& t)=0; //método virtual puro (=0);
 
 };
 
