@@ -1,5 +1,6 @@
 //retangulo.cpp -- Implementações dos métodos da classe Retangulo
 #include "retangulo.h"
+#include "reta.h"
 
 Retangulo::Retangulo() {}   //construtor padrão
 
@@ -11,4 +12,18 @@ Retangulo::Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode,
     altura = _altura;
     fillmode = _fillmode;
     brush = _brush;     //o brush é da superclasse FiguraGeometrica.
+}
+
+void Retangulo::draw(Screen &t){
+
+    Reta *reta_cima = new Reta (x0, y0, x0+largura, y0, brush);
+    Reta *reta_baixo = new Reta (x0, y0+altura,x0+largura ,y0+altura , brush);
+    Reta *reta_esquerda = new Reta (x0,y0 ,x0 ,y0+altura , brush);
+    Reta *reta_direita = new Reta (x0+largura,y0 , x0+largura,y0+altura , brush);
+
+    reta_cima->draw(t);
+    reta_baixo->draw(t);
+    reta_esquerda->draw(t);
+    reta_direita->draw(t);
+    t.setPixel(x0+largura,y0+altura); //sem essa linha, o pixel do canto inferior direito não aparece
 }
