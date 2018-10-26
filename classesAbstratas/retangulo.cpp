@@ -16,6 +16,7 @@ Retangulo::Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode,
 
 void Retangulo::draw(Screen &t){
 
+    //desenhando as bordas
     Reta *reta_cima = new Reta (x0, y0, x0+largura, y0, brush);
     Reta *reta_baixo = new Reta (x0, y0+altura,x0+largura ,y0+altura , brush);
     Reta *reta_esquerda = new Reta (x0,y0 ,x0 ,y0+altura , brush);
@@ -26,4 +27,15 @@ void Retangulo::draw(Screen &t){
     reta_esquerda->draw(t);
     reta_direita->draw(t);
     t.setPixel(x0+largura,y0+altura); //sem essa linha, o pixel do canto inferior direito não aparece
+
+    //preenchendo (se necessário)
+    if(fillmode>0){
+        for(int i =0;i<largura; i++){
+            for(int j =0; j<altura; j++){
+                t.setPixel(x0+i,y0+j);
+            }
+        }
+    }
+
 }
+
