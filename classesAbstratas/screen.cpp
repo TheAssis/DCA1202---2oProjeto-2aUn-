@@ -4,6 +4,10 @@
 
 using namespace std; //caso contrário tenho que por std:: na ostream!
 
+Screen::Screen(){ //o parser é definido com um construtor de screen vazio
+
+}
+
 Screen::Screen(int _nlin,int _ncol) {       //construtor com parâmetros
     nlin = _nlin;
     ncol = _ncol;
