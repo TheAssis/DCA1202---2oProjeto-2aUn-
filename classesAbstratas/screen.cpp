@@ -18,7 +18,7 @@ void Screen::setBrush(char _brush) { //define o caractere a ser printado
 
 
 void Screen::setPixel(int x, int y) {
-    if(x>=0 && y>=0 && x<=ncol && y<=nlin){
+    if(x>=0 && y>=0 && x<ncol && y<nlin){
         mat[x][y] = brush;
     }
 }
@@ -43,3 +43,4 @@ ostream& operator<<(ostream& os, Screen& t) {
 
     return os;
 }
+
