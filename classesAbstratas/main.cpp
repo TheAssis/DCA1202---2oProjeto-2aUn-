@@ -9,18 +9,17 @@ int main() {
     Screen tela(10,10);
 
     tela.setBrush('&');
-    tela.setPixel(3,3);
+    tela.setPixel(9,8);
 
-    cout << tela;
+    //cout << tela;
 
-    Reta *reta = new Reta (0, 0, 20, 20, '&');
+    Reta *reta = new Reta (0, 0, 10, 10, '%');
 
     reta->draw(tela);
 
     cout << tela;
 
     delete reta;
-
 
     return 0;
 }
