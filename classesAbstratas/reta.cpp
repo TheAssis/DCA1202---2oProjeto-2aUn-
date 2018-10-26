@@ -24,6 +24,7 @@ Reta::Reta(int _x1, int _y1, int _x2, int _y2, char _brush){ // construtor com a
 
 void Reta::draw(Screen &t)
 {
+    t.setBrush(brush); //reconfigurando o pincel de desenho
     int Troca;
     int x = x1;
     int y = y1;
