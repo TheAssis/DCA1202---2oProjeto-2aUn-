@@ -7,12 +7,13 @@ using namespace std; //caso contrário tenho que por std:: na ostream!
 Screen::Screen(int _nlin,int _ncol) {       //construtor com parâmetros
     nlin = _nlin;
     ncol = _ncol;
+    brush = ' ';        //a tela começa em branco quando inicializa.
     mat = vector< vector<char> >(nlin, vector<char>(ncol,brush)); // definindo a matriz tela
 }
 
 
 void Screen::setBrush(char _brush) { //define o caractere a ser printado
-    brush = _brush;
+    this->brush = _brush;
 }
 
 
