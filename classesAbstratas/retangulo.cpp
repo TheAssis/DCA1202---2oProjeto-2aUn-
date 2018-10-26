@@ -1,7 +1,7 @@
 //retangulo.cpp -- Implementações dos métodos da classe Retangulo
 #include "retangulo.h"
 
-Retangulo::Retangulo() {}
+Retangulo::Retangulo() {}   //construtor padrão
 
 Retangulo::Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode, char _brush)
 {
@@ -10,5 +10,5 @@ Retangulo::Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode,
     largura = _largura;
     altura = _altura;
     fillmode = _fillmode;
-    brush = _brush;
-}       //construtor padrão
+    brush = _brush;     //o brush é da superclasse FiguraGeometrica.
+}

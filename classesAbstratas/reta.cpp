@@ -19,7 +19,7 @@ Reta::Reta(int _x1, int _y1, int _x2, int _y2, char _brush){ // construtor com a
     x2 = _x2;
     y1 = _y1;
     y2 = _y2;
-    brush = _brush;
+    brush = _brush; //o brush é da superclasse FiguraGeometrica.
 }
 
 void Reta::draw(Screen &t)
@@ -31,6 +31,7 @@ void Reta::draw(Screen &t)
     int Delta_y = abs(y2 - y1);
     int s1=Sinal(x2 - x1);
     int s2=Sinal(y2 - y1);
+
     if(Delta_y > Delta_x){
         int Temp = Delta_x;
         Delta_x = Delta_y;
@@ -40,7 +41,9 @@ void Reta::draw(Screen &t)
     else{
         Troca = 0;
     }
+
     int new_e = 2*Delta_y - Delta_x;
+
     for(int i=1; i<= Delta_x; i++){
         t.setPixel(x,y);
         while (new_e >= 0){
