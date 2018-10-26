@@ -12,6 +12,7 @@ private:
 public:
     Retangulo();
     Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode, char _brush);
+    void draw(Screen &t);
 };
 
 #endif // RETANGULO_H
