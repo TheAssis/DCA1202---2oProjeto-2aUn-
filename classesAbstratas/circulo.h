@@ -13,6 +13,7 @@ private:
 public:
     Circulo();
     Circulo(int _x0, int _y0, int _raio, int _fillmode, char _brush);
+    void draw(Screen &t);
 
 
 };

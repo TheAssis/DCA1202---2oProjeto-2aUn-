@@ -15,6 +15,7 @@ Retangulo::Retangulo(int _x0, int _y0, int _largura, int _altura, int _fillmode,
 }
 
 void Retangulo::draw(Screen &t){
+    t.setBrush(brush);
 
     //desenhando as bordas
     Reta *reta_cima = new Reta (x0, y0, x0+largura, y0, brush);
