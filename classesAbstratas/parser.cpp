@@ -40,7 +40,7 @@ void Parser::ler_arquivo(string caminho){
             break;
         }
         linha += " ";
-        ss = stringstream(linha);
+        ss.str(linha);//ss = stringstream(linha);
         ss >> cmd;
         cout << cmd << endl;
 
