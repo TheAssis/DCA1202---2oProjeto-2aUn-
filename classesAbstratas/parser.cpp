@@ -101,7 +101,7 @@ void Parser::exec(string _caminho){
     //cout<<"ja cheguei no desenhador";
         figuras[i]->draw(tela);
     }
-
+    cout<<tela;
 }
 
 Screen& Parser::gravar(Screen &tela_de_gravacao){
