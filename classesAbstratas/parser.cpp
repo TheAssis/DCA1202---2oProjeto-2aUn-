@@ -96,15 +96,19 @@ void Parser::exec(string _caminho){
     fin.close();
     // fim da leitura, agora irei desenhar
 
+
     for(int i = 0; i < figuras.size(); i++){
     //cout<<"ja cheguei no desenhador";
         figuras[i]->draw(tela);
     }
-    cout<<tela; // isso aqui vai pro Parser::gravar
 
 }
 
-void Parser::gravar()
-{
-// código responsável por printar na tela ou gravar em txt. Ou seja, conecta o resultado do desenho a um fluxo de saída
+Screen& Parser::gravar(Screen &tela_de_gravacao){
+    for(int i = 0; i < figuras.size(); i++){
+    //cout<<"ja cheguei no desenhador";
+        figuras[i]->draw(tela_de_gravacao);
+    }
+    // código responsável por printar na tela ou gravar em txt. Ou seja, conecta o resultado do desenho a um fluxo de saída
+    return tela_de_gravacao;
 }
