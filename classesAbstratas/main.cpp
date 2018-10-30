@@ -12,7 +12,7 @@ using namespace std;
 
 int main() {
     //testando se está printando.
-    Screen tela(20,20);
+    Screen tela(35,35);
 
     tela.setBrush('&');
     tela.setPixel(0,1);
@@ -22,10 +22,10 @@ int main() {
     Retangulo *ret = new Retangulo (0,2,5,5,10,'*');
     ret->draw(tela);
 
-    Reta *reta = new Reta (0, 0, 10, 10, '%');
+    Reta *reta = new Reta (0, 0, 55, 10, '%');
     reta->draw(tela);
 
-    Circulo *circulizinho = new Circulo (0,4,5,20,'$');
+    Circulo *circulizinho = new Circulo (10,23,9,1,'$');
     circulizinho->draw(tela);
 
     cout << tela;
