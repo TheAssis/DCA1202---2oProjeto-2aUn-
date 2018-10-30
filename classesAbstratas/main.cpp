@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream> // imprimir em txt
+#include <stdlib.h>
 
 #include "screen.h"
 #include "reta.h"
@@ -11,7 +12,7 @@
 using namespace std;
 
 int main() {
-    //teste de desenho via função principal (main).
+    //testando se está printando.
     Screen tela(35,35);
 
     tela.setBrush('&');
@@ -30,9 +31,9 @@ int main() {
 
     cout << tela;
 
-    ofstream fout; //para teste de impressão em txt do que foi colocado via função principal
-    fout.open("C:\\Users\\SALA DE AULA\\Documents\\Assis\\registro_de_impressao.txt"); //caminho do arquivo onde vai ser
-    if(!fout.is_open()){                                                               //desenhado
+    ofstream fout; //para teste de impressão em txt
+    fout.open("C:\\Users\\SALA DE AULA\\Documents\\Assis\\registro_de_impressao.txt");
+    if(!fout.is_open()){
         cout << "arquivo nao foi aberto";
         exit(0);
     }
@@ -43,25 +44,20 @@ int main() {
     delete reta;
     delete ret;
 
-    //fim do teste via função main
-    
-    //início do teste via parser
     Parser leitor;
-    leitor.exec("C:\\Users\\SALA DE AULA\\Documents\\Assis\\teste.txt"); //caminho do arquivo onde estarão as instruções de desenho
+    leitor.exec("C:\\Users\\SALA DE AULA\\Documents\\Assis\\teste.txt");
     cout<<tela;
 
     Screen telaFILE(20,20);
 
     ofstream foutFILE; //para teste de impressão em txt
-    foutFILE.open("C:\\Users\\SALA DE AULA\\Documents\\Assis\\registro_de_impressaoFILE.txt"); //caminho do arquivo onde vai ser
-    if(!foutFILE.is_open()){                                                                   //desenhado.
+    foutFILE.open("C:\\Users\\SALA DE AULA\\Documents\\Assis\\registro_de_impressaoFILE.txt");
+    if(!foutFILE.is_open()){
         cout << "arquivo sdajlfkshfjlkçh nao foi aberto";
         exit(0);
     }
     else{
         foutFILE<<leitor.gravar(telaFILE);
     }
-    
-    //fim do teste via parser
     return 0;
 }
