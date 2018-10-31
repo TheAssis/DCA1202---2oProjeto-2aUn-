@@ -22,9 +22,9 @@ Reta::Reta(int _x1, int _y1, int _x2, int _y2, char _brush){ // construtor com a
     brush = _brush; //o brush é da superclasse FiguraGeometrica.
 }
 
-void Reta::draw(Screen &t)
-{
+void Reta::draw(Screen &t) {
     t.setBrush(brush);
+
     int Troca;
     int x = x1;
     int y = y1;
