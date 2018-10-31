@@ -1,0 +1,54 @@
+\hypertarget{class_circulo}{}\section{Circulo Class Reference}
+\label{class_circulo}\index{Circulo@{Circulo}}
+
+
+Subclasse da classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} e responsável por desenhar círculos, preenchidos ou não, na tela.  
+
+
+
+
+{\ttfamily \#include $<$circulo.\+h$>$}
+
+
+
+Inheritance diagram for Circulo\+:
+% FIG 0
+
+
+Collaboration diagram for Circulo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circulo_a86194b47de546a155a2e9dd481ab200c}\label{class_circulo_a86194b47de546a155a2e9dd481ab200c}} 
+\hyperlink{class_circulo_a86194b47de546a155a2e9dd481ab200c}{Circulo} (int \+\_\+x0, int \+\_\+y0, int \+\_\+raio, int \+\_\+fillmode, char \+\_\+brush)
+\begin{DoxyCompactList}\small\item\em Construtor com parâmetros que inicializa as dimensões, posição inicial e condição, se o círculo está preenchido ou não, e seu brush. \end{DoxyCompactList}\item 
+void \hyperlink{class_circulo_a593787d6e0618c2eded23e8839e7bea6}{draw} (\hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em Método que draw que é virtualizado pela classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Subclasse da classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} e responsável por desenhar círculos, preenchidos ou não, na tela. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circulo_a593787d6e0618c2eded23e8839e7bea6}\label{class_circulo_a593787d6e0618c2eded23e8839e7bea6}} 
+\index{Circulo@{Circulo}!draw@{draw}}
+\index{draw@{draw}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circulo\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_screen}{Screen} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Método que draw que é virtualizado pela classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica}. 
+
+Método draw virtualizado da classe \hyperlink{class_circulo}{Circulo}.
+
+Implements \hyperlink{class_figura_geometrica_a06404670d06d28d12f5f386901186925}{Figura\+Geometrica}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ariel/\+Documentos/\+Projetos Git/\+D\+C\+A1202-\/-\/-\/2o\+Projeto-\/2a\+Un-\//classes\+Abstratas/circulo.\+h\item 
+/home/ariel/\+Documentos/\+Projetos Git/\+D\+C\+A1202-\/-\/-\/2o\+Projeto-\/2a\+Un-\//classes\+Abstratas/circulo.\+cpp\end{DoxyCompactItemize}

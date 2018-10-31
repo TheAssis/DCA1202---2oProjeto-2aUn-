@@ -13,7 +13,9 @@ Circulo::Circulo(int _x0, int _y0, int _raio, int _fillmode, char _brush)
     brush = _brush;     //o brush é da superclasse FiguraGeometrica.
 }
 
-
+/** @brief Método draw virtualizado da classe Circulo.
+ *
+ */
 void Circulo::draw(Screen& t) {//minhas variaveis estao em x0,y0,raio e fillmode
     t.setBrush(brush);
 

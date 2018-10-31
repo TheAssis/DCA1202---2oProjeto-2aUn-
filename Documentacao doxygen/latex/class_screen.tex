@@ -1,0 +1,41 @@
+\hypertarget{class_screen}{}\section{Screen Class Reference}
+\label{class_screen}\index{Screen@{Screen}}
+
+
+Classe que abarca a tela propriamente dita (uma matriz de char) e realiza as operações de desenho de pixeis, limpeza da tela e alteração do brush.  
+
+
+
+
+{\ttfamily \#include $<$screen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_a6c21beca43d25854d8674445127ef2eb}\label{class_screen_a6c21beca43d25854d8674445127ef2eb}} 
+\hyperlink{class_screen_a6c21beca43d25854d8674445127ef2eb}{Screen} (int \+\_\+nlin, int \+\_\+ncol)
+\begin{DoxyCompactList}\small\item\em Construtor que seta as dimensões da matriz que representa a tela. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}\label{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}} 
+void \hyperlink{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}{set\+Pixel} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Método encabido de desenhar o brush representando um pixel na tela na localização (x,y). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_a6941fa7dd557046177b1f73b88c2705f}\label{class_screen_a6941fa7dd557046177b1f73b88c2705f}} 
+void \hyperlink{class_screen_a6941fa7dd557046177b1f73b88c2705f}{clear} (void)
+\begin{DoxyCompactList}\small\item\em Limpa a tela, preenchendo toda ela com o caractere espaço/\textquotesingle{} \textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_screen_a14a00e158f99df199772172554a20576}\label{class_screen_a14a00e158f99df199772172554a20576}} 
+void \hyperlink{class_screen_a14a00e158f99df199772172554a20576}{set\+Brush} (char brush)
+\begin{DoxyCompactList}\small\item\em Define qual é o caractere que será utilizado para desenhar na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_screen_aab6a2880746bfe1b7964817cc8f0989e}\label{class_screen_aab6a2880746bfe1b7964817cc8f0989e}} 
+ostream \& \hyperlink{class_screen_aab6a2880746bfe1b7964817cc8f0989e}{operator$<$$<$} (ostream \&os, \hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador \textquotesingle{}$<$$<$\textquotesingle{} que permitirá que a tela seja printada sem muitas dificuldades e utilizando o cout $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que abarca a tela propriamente dita (uma matriz de char) e realiza as operações de desenho de pixeis, limpeza da tela e alteração do brush. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ariel/\+Documentos/\+Projetos Git/\+D\+C\+A1202-\/-\/-\/2o\+Projeto-\/2a\+Un-\//classes\+Abstratas/screen.\+h\item 
+/home/ariel/\+Documentos/\+Projetos Git/\+D\+C\+A1202-\/-\/-\/2o\+Projeto-\/2a\+Un-\//classes\+Abstratas/screen.\+cpp\end{DoxyCompactItemize}
